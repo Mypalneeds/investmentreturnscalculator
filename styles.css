@@ -1,0 +1,24 @@
+body {
+    background-color: #212529; /* Dark background */
+    color: white; /* White text for readability */
+}
+
+.container {
+    margin-top: 20px;
+}
+
+#result, #constraints, #explanation {
+    background-color: #343a40; /* Slightly lighter background for the result sections */
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h1, h5 {
+    color: #76ff03; /* Bright green for headings */
+}
+
+footer {
+    color: #aaa; /* Lighter footer text */
+}

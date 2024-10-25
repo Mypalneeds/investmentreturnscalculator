@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Investment Return Calculator by Analaize</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <meta name="description" content="Discover your potential investment returns with the Investment Return Calculator by Analaize. Input your industry, region, and investment size to get a comprehensive ROI analysis!">
+    <meta name="keywords" content="Investment Return Calculator, ROI Analysis, Analaize, Investment Tips, Financial Tools, ROI Calculator, Investment Returns, Financial Planning, Economic Insights, Industry-Specific ROI">
+    <meta name="robots" content="index, follow">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- Chart.js Library -->
+</head>
+<body class="bg-dark text-light">
+    <div class="container">
+        <h1 class="mt-5 text-center">Investment Return Calculator by Analaize</h1>
+        <img src="https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_159,h_60/https://analaize.com.ng/wp-content/uploads/2023/05/cropped-LOGO-PNG-1-e1683960767400.png" alt="Analaize Logo" class="mx-auto d-block my-3" width="160">
+        <form id="investmentForm" class="mt-4">
+            <div class="form-group">
+                <label for="industry">Select Industry:</label>
+                <select id="industry" class="form-control">
+                    <option value="technology">Technology</option>
+                    <option value="agriculture">Agriculture</option>
+                    <option value="realEstate">Real Estate</option>
+                    <option value="healthcare">Healthcare</option>
+                    <option value="finance">Finance</option>
+                    <option value="manufacturing">Manufacturing</option>
+                    <option value="retail">Retail</option>
+                    <option value="energy">Energy</option>
+                    <option value="telecommunications">Telecommunications</option>
+                    <option value="transportation">Transportation</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="region">Select Region:</label>
+                <select id="region" class="form-control">
+                    <option value="northAmerica">North America</option>
+                    <option value="southAmerica">South America</option>
+                    <option value="europe">Europe</option>
+                    <option value="asia">Asia</option>
+                    <option value="africa">Africa</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="investmentSize">Investment Size ($):</label>
+                <input type="number" id="investmentSize" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="estimatedPeriod">Estimated Period (in years):</label>
+                <input type="number" id="estimatedPeriod" class="form-control" required>
+            </div>
+            <button type="button" class="btn btn-success" onclick="calculateROI()">Calculate ROI</button>
+        </form>
+        <div id="result" class="mt-4"></div>
+        <canvas id="roiChart" class="mt-4" style="display:none;"></canvas>
+        <div id="constraints" class="mt-4"></div>
+        <div id="explanation" class="mt-4">
+            <h5>How This Result Was Obtained:</h5>
+            <p>The estimated ROI is calculated based on historical performance metrics and average returns for the selected industry in the specified region. The calculation considers the investment size and projected ROI percentage derived from financial data sources.</p>
+        </div>
+        <footer class="mt-5 text-center">
+            <p>© 2024 Analaize. All Rights Reserved.</p>
+        </footer>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
